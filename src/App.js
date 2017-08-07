@@ -1,21 +1,27 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import logo from './logo.svg'
+import { Banner, Heading } from 'rebass'
+import rikersIsland from './assets/images/rikersIsland.jpg'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+        <Banner
+          color='white'
+          bg='gray8'
+          backgroundImage='https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=2048&q=20'>
+          <Heading
+            f={[ 4, 5, 6, 7 ]}>
+            Rikers Numbers Today
+          </Heading>
+        </Banner>
+
+
+        
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

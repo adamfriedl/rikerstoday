@@ -1,8 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Provider } from 'rebass'
+import App from './App'
+import registerServiceWorker from './registerServiceWorker'
+// import {createStore, applyMiddleware, compose} from 'redux'
+// import thunk from 'redux-thunk'
+// import rootReducer from './reducers'
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+
+// const store = createStore(
+//   rootReducer,
+//   compose(
+//     applyMiddleware(thunk),
+//     window.devToolsExtension ? window.devToolsExtension() : f => f
+//   )
+// )
+
+ReactDOM.render(
+    <Provider
+      theme={{
+        font: '"Playfair Display", serif'
+      }}
+      style={{lineHeight: 1.35}}
+    >
+      <App />
+    </Provider>,
+    document.getElementById('root')); 
+    registerServiceWorker();
+
+
