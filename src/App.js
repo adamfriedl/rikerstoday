@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import fetch from 'isomorphic-fetch'
 import HeroImage from './HeroImage'
+import { Sticky, Text } from 'rebass'
+import Header from './Header'
 
 class App extends Component {
   constructor() {
@@ -23,6 +25,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Header />
         <HeroImage totalCount={this.state.totalCount} />
       </div>
     )
