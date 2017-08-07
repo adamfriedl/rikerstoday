@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'rebass'
-import App from './App'
+import App from './containers/App'
 import registerServiceWorker from './registerServiceWorker'
 // import {createStore, applyMiddleware, compose} from 'redux'
 // import thunk from 'redux-thunk'
