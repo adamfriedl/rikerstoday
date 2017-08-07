@@ -1,14 +1,12 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
-import { Banner, Heading } from 'rebass'
-import rikersIsland from './assets/images/rikersIsland.jpg'
 import fetch from 'isomorphic-fetch'
+import HeroImage from './HeroImage'
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
-      totalCount: 0
+      totalCount: ''
     }  
   }
 
@@ -25,20 +23,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Banner
-          color='white'
-          bg='gray8'
-          backgroundImage='https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=2048&q=20'>
-          <Heading
-            f={[ 4, 5, 6, 7 ]}>
-            Rikers Numbers Today<br />
-            {this.state.totalCount}
-          </Heading>
-
-        </Banner>
-
-
-        
+        <HeroImage totalCount={this.state.totalCount} />
       </div>
     )
   }
