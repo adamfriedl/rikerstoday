@@ -35,7 +35,7 @@ class App extends Component {
 
         <Header />
         <HeroImage totalCount={this.state.data.length} />
-        <Breakdown totalCount={this.state.data.length} under16={under16} mho={mho}/>
+        <Breakdown under16={under16} mho={mho}/>
         </div>
     )
   }

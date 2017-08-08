@@ -3,11 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "d3": "^4.10.0",
     "gh-pages": "^1.0.0",
     "isomorphic-fetch": "^2.2.1",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-easy-chart": "^0.1.13",
+    "react-faux-dom": "^4.0.3",
+    "react-google-charts": "^1.5.5",
     "react-redux": "^5.0.5",
     "react-router-dom": "^4.1.1",
     "react-router-link": "^2.0.2",
@@ -15,7 +19,8 @@
     "rebass": "^1.0.3",
     "recharts": "^1.0.0-alpha.2",
     "redux": "^3.6.0",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "rm": "^0.1.8"
   },
   "devDependencies": {
     "react-scripts": "1.0.10"

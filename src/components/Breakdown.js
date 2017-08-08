@@ -1,6 +1,5 @@
 import React from 'react'
-import { Flex, Panel, PanelHeader, Text, Box } from 'rebass'
-
+import { Flex, Panel, PanelHeader, Text, Box, Subhead } from 'rebass'
 
 const Breakdown = props => 
 
@@ -20,13 +19,12 @@ const Breakdown = props =>
           >
           Under 18
         </PanelHeader>
-        <Text
+        <Subhead
           color='blue4'
           ml={2}
-          f={3}
         >
           {props.under16}
-        </Text>
+        </Subhead>
       </Box>
 
       <Box
@@ -49,7 +47,9 @@ const Breakdown = props =>
           {props.mho}
         </Text>
       </Box>
-   
+      <Box>
+
+      </Box>
    
    
     </Flex>
