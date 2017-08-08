@@ -12,13 +12,11 @@ const Breakdown = props => {
   return(
     <div>
 
-      <Flex
-      >
-
+      <Flex wrap>
         <Box
-          w={[1, 1/3]}
+          width={[1, 1/2, 1/3]}
           my={3}
-          mx={3}
+          // mx={3}
           pr={3}
         >
           <PanelHeader
@@ -36,9 +34,9 @@ const Breakdown = props => {
         </Box>
 
         <Box
-          w={[1, 1/3]}
+          w={[1, 1/2, 1/3]}
           my={3}
-          mx={3}
+          // mx={3}
           pr={3}
         >
           <PanelHeader
@@ -56,9 +54,9 @@ const Breakdown = props => {
           </Text>
         </Box>
         <Box
-          w={[1, 1/3]}
+          w={[1, 1/2, 1/3]}
           my={3}
-          mx={3}
+          // mx={3}
           pr={3}
         >
           <PanelHeader
@@ -76,9 +74,6 @@ const Breakdown = props => {
             ]}
           />
         </Box>
-          
-    
-    
       </Flex>
 
     </div>
