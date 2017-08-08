@@ -1,29 +1,57 @@
 import React from 'react'
-import { Flex, Panel, PanelHeader, PanelFooter, Box, Subhead, Donut } from 'rebass'
+import { Flex, Panel, PanelHeader, Text, Box } from 'rebass'
 
 
 const Breakdown = props => 
 
   <div>
 
-    <Flex column
-      w={1/3}
-    >
-      <Panel 
-        color='blue4'
-        my={2}  
+    <Flex>
+
+      <Box
+        w={1/3}
+        my={3}
+        mx={3}
+        pr={3}
       >
         <PanelHeader
-          color='white'
-          bg='blue4'>
-          Under 18 - {props.under16}
+          color='blue4'
+          f={4}
+          >
+          Under 18
         </PanelHeader>
-        <Box p={3}>
-        </Box>
-        <PanelFooter color='blue4'>
-          Footer
-        </PanelFooter>
-      </Panel>
+        <Text
+          color='blue4'
+          ml={2}
+          f={3}
+        >
+          {props.under16}
+        </Text>
+      </Box>
+
+      <Box
+        w={1/3}
+        my={3}
+        mx={3}
+        pr={3}
+      >
+        <PanelHeader
+          color='blue4'
+          f={4}
+          >
+          Mental Health Observation
+        </PanelHeader>
+        <Text
+          color='blue4'
+          ml={2}
+          f={3}
+        >
+          {props.mho}
+        </Text>
+      </Box>
+   
+   
+   
     </Flex>
 
   </div>

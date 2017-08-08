@@ -25,8 +25,9 @@ class App extends Component {
   render() {
 
     let under16 = this.state.data.filter(inmate => inmate.age < 18).length
-    let infraction = this.state.data.filter(inmate => inmate.infraction == 'Y').length
-    console.log({infraction})
+    let mho = this.state.data.filter(inmate => inmate.bradh == 'Y').length
+    let race = this.state.data.filter(inmate => inmate.race == 'B').length
+    console.log('Number black is '+ race)
 
 
     return (
@@ -34,7 +35,7 @@ class App extends Component {
 
         <Header />
         <HeroImage totalCount={this.state.data.length} />
-        <Breakdown totalCount={this.state.data.length} under16={under16} />
+        <Breakdown totalCount={this.state.data.length} under16={under16} mho={mho}/>
         </div>
     )
   }

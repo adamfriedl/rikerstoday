@@ -5,39 +5,20 @@ import rikersIsland from '../assets/images/rikersIsland.jpg'
 const HeroImage = (props) => 
 
   <div>
-    <Flex>
-      <Box
-        w={[
-          1, 
-          1/2
-        ]}
-      >
-        <Banner
-          color='white'
-          bg='gray1'
-          // backgroundImage={rikersIsland}
-        >
-          <Heading
-            f={[ 6, 7 ]}
-            children='In NYC DOC Custody Today:'
-          />
-        </Banner>
-      </Box>
-      <Box
-        w={[1, 1/2]}
-      >
-        <Banner
-          color='white'
-          bg='gray1'
-          // backgroundImage={rikersIsland}
-        >
-          <Heading
-            f={[ 6, 7 ]}
-            children={props.totalCount}
-          />
-        </Banner>
-      </Box>
-    </Flex>
+    <Banner
+      color='blue4'
+      bg='gray1'
+      // backgroundImage={rikersIsland}
+    >
+      <Heading
+        f={[ 4, 5 ]}
+        children='In NYC DOC Custody Today:'
+      />
+    <Heading
+        f={7}
+        children={props.totalCount}
+      />
+    </Banner>
 
   </div>
 
