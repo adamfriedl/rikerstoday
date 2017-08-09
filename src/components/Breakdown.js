@@ -1,7 +1,8 @@
 import React from 'react'
-import { Flex, Panel, PanelHeader, PanelFooter, Text, Box, Subhead } from 'rebass'
+import { Flex, PanelHeader, Text, Box, Panel, Subhead} from 'rebass'
 import { VictoryChart, VictoryContainer, VictoryPie, VictoryTheme, VictoryTransition, VictoryLabel, VictoryTooltip } from 'victory'
 import PieChart from './PieChart'
+import TextStat from './TextStat'
 
 const Breakdown = props => {
 
@@ -44,6 +45,9 @@ const Breakdown = props => {
     { x: 'Over 55 \n' + Math.round(over55/total*100) + '%', y: over55 },
   ]
 
+  let female = props.data.filter(inmate => inmate.gender === 'F').length
+  let femalePercent = Math.round(female/total*100) + '%'
+
 
 
   return(
@@ -66,7 +70,36 @@ const Breakdown = props => {
           chartData={ageChartData}
         />
       
-        </Flex>
+
+        <Box
+          w={[1, 1/2, 1/3]}
+          my={2}
+          pr={4}
+        >
+
+          <PanelHeader
+            color='blue4'
+            f={4}
+            mb={-3}
+            children={'Female'}
+          />
+          
+          <Text
+            color='blue4'
+            f={7}
+            mt={4}
+            center
+            children={femalePercent}
+          />
+
+      </Box>
+
+      <TextStat
+        title={'Female'}
+        stat={femalePercent}
+      />
+        
+    </Flex>
 
     </div>
   ) 
