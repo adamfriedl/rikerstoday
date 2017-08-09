@@ -8,6 +8,7 @@ export default class App extends Component {
   constructor() {
     super()
     this.state = {
+      loading: true,
       data: []
     }  
   }
@@ -17,6 +18,7 @@ export default class App extends Component {
       .then(res => res.json())
       .then(array => 
         this.setState({
+          loading: false,
           data: array
         })
       )
@@ -24,12 +26,12 @@ export default class App extends Component {
   
   render() {
 
-    const { data } = this.state
+    const { loading, data } = this.state
 
     return (
       <div>
         <Header />
-        <HeroImage data={data} />
+        <HeroImage loading={loading} data={data} />
         <Breakdown data={data} />
         </div>
     )

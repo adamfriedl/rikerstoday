@@ -12,7 +12,8 @@ const Header = () =>
   >
     <Text
       f={4}
-      children='RIKERS NUMBERS TODAY'
+      children='RIKERS TODAY'
+      style={{fontFamily: "Frijole"}}
     />
   </Sticky>
 

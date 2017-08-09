@@ -31,7 +31,7 @@ const PieChart = ({
           data={chartData}      
           innerRadius={25} 
           labelRadius={50}
-          style={{ labels: { fontFamily: '"Playfair Display", serif', fontSize: 20, fill: "white" }}}
+          style={{ labels: { fontFamily: '"Comfortaa", serif', fontSize: 17, fill: "white" }}}
           colorScale={colors}       
         />
     </Box>

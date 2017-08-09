@@ -19,7 +19,7 @@ import registerServiceWorker from './registerServiceWorker'
 ReactDOM.render(
     <Provider
       theme={{
-        font: '"Playfair Display", serif'
+        font: '"Comfortaa", sans-serif'
       }}
       style={{lineHeight: 1.35}}
     >
