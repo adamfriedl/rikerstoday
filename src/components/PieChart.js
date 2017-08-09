@@ -29,8 +29,8 @@ const PieChart = ({
       </PanelHeader>                        
         <VictoryPie
           data={chartData}      
-          innerRadius={60} 
-          labelRadius={85}
+          innerRadius={25} 
+          labelRadius={50}
           style={{ labels: { fontFamily: '"Playfair Display", serif', fontSize: 20, fill: "white" }}}
           colorScale={colors}       
         />

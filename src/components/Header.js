@@ -12,7 +12,7 @@ const Header = () =>
   >
     <Text
       f={4}
-      children='Rikers Numbers Today'
+      children='RIKERS NUMBERS TODAY'
     />
   </Sticky>
 

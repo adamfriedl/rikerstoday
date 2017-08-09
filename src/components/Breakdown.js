@@ -5,6 +5,11 @@ import PieChart from './PieChart'
 
 const Breakdown = props => {
 
+  // const calculateStay = () => {
+  //   let today = new Date()
+  //   let admitDate = .admitted_dt
+  //   console.log(today, admitDate)
+  // }
   let total = props.data.length
 
   let min = props.data.filter(inmate => inmate.custody_level === 'MIN').length
@@ -28,6 +33,19 @@ const Breakdown = props => {
         { x: 'White \n' + Math.round(white/total*100) + '%', y: white }
       ]
 
+  let under18 = props.data.filter(inmate => inmate.age < 18).length
+  let to30 = props.data.filter(inmate => inmate.age > 18 && inmate.age <= 30).length
+  let to55 = props.data.filter(inmate => inmate.age > 30 && inmate.age <= 55).length
+  let over55 = props.data.filter(inmate => inmate.age > 55).length
+  let ageChartData = [
+    { x: 'Under 18 \n' + Math.round(under18/total*100) + '%', y: under18 },
+    { x: '18 to 30 \n' + Math.round(to30/total*100) + '%', y: to30 },
+    { x: '31 to 55 \n' + Math.round(to55/total*100) + '%', y: to55 },
+    { x: 'Over 55 \n' + Math.round(over55/total*100) + '%', y: over55 },
+  ]
+
+
+
   return(
     <div>
 
@@ -41,6 +59,11 @@ const Breakdown = props => {
         <PieChart
           title={'Custody Level'}
           chartData={custodyChartData} 
+        />
+
+        <PieChart
+          title={'Age'}
+          chartData={ageChartData}
         />
       
         </Flex>

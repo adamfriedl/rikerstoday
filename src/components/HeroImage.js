@@ -6,8 +6,8 @@ const HeroImage = (props) =>
 
   <div>
     <Banner
-      color='green4'
-      bg='blue4'
+      color='blue4'
+      // bg='green4'
       // backgroundImage={rikersIsland}
     >
       <Heading
