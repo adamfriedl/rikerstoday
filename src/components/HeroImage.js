@@ -1,29 +1,43 @@
 import React, { Component } from 'react'
 import { Flex, Box, Banner, Text, Heading } from 'rebass'
-import rikersIsland from '../assets/images/rikersIsland.jpg'
+import rikersCell from '../assets/images/rikersCell.jpg'
 import grid from '../assets/icons/grid.svg'
 
 const HeroImage = (props) => 
 
   <div>
     <Banner
-      color='blue4'
+      color='white'
       // bg='green4'
-      // backgroundImage={rikersIsland}
+      backgroundImage={rikersCell}
     >
-      <Heading
-        f={[ 4, 5 ]}
-        children='In NYC DOC Custody:'
-      />
-      <Heading
-          f={9}
-          children={props.data.length}
-      >
-        {props.loading ?
-          <img src={grid} /> :
-          props.data.length
-        }
-      </Heading>
+      <Flex wrap>
+        
+        <Box
+          w={[1, 1/2]}
+        >
+          <Heading
+              f={9}
+          >
+            {props.loading ?
+              <img src={grid} /> :
+              props.data.length
+            }
+          </Heading>
+        </Box>
+
+        <Box
+          w={[1, 1/2]}
+        >
+          <Text
+            mt={3}
+            f={[3, 4]}
+            children='persons are in NYC DOC custody'
+          />
+        </Box>
+        
+      </Flex>
+
     </Banner>
 
   </div>
