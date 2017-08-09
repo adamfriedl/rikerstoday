@@ -16,7 +16,7 @@ const HeroImage = (props) =>
       />
     <Heading
         f={7}
-        children={props.totalCount}
+        children={props.data.length}
       />
     </Banner>
 

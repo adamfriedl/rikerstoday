@@ -4,7 +4,7 @@ import HeroImage from '../components/HeroImage'
 import Header from '../components/Header'
 import Breakdown from '../components/Breakdown'
 
-class App extends Component {
+export default class App extends Component {
   constructor() {
     super()
     this.state = {
@@ -24,21 +24,14 @@ class App extends Component {
   
   render() {
 
-    let under16 = this.state.data.filter(inmate => inmate.age < 18).length
-    let mho = this.state.data.filter(inmate => inmate.bradh == 'Y').length
-    let race = this.state.data.filter(inmate => inmate.race == 'B').length
-    console.log('Number black is '+ race)
-
+    const { data } = this.state
 
     return (
       <div>
-
         <Header />
-        <HeroImage totalCount={this.state.data.length} />
-        <Breakdown data={this.state.data} under16={under16} mho={mho}/>
+        <HeroImage data={data} />
+        <Breakdown data={data} />
         </div>
     )
   }
 }
-
-export default App
