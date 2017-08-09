@@ -6,16 +6,16 @@ const HeroImage = (props) =>
 
   <div>
     <Banner
-      color='blue4'
+      color='white'
       bg='gray1'
-      // backgroundImage={rikersIsland}
+      backgroundImage={rikersIsland}
     >
       <Heading
         f={[ 4, 5 ]}
         children='In NYC DOC Custody Today:'
       />
     <Heading
-        f={7}
+        f={9}
         children={props.data.length}
       />
     </Banner>
