@@ -1,20 +1,26 @@
 import React from 'react'
-import { Sticky, Text } from 'rebass'
+import { Sticky, Text, NavLink } from 'rebass'
 
 const Header = () =>
 
   <Sticky 
-    p={3} 
+    p={1} 
     // my={2} 
     top left
-    color={'green4'}
-    bg={'blue4'}
+    color={'blue4'}    
+    bg={'white'}
   >
     <Text
-      f={4}
-      children='RIKERS TODAY'
-      style={{fontFamily: "Frijole"}}
+      f={[2, 3]}
+      children={'Rikers Today'}
     />
+      
+      <NavLink
+        style={{textAlign: 'right'}}
+        href={'#'}
+        children='About'
+      />
+
   </Sticky>
 
   export default Header
