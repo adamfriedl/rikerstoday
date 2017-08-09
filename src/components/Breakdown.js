@@ -69,37 +69,13 @@ const Breakdown = props => {
           title={'Age'}
           chartData={ageChartData}
         />
-      
 
-        <Box
-          w={[1, 1/2, 1/3]}
-          my={2}
-          pr={4}
-        >
-
-          <PanelHeader
-            color='blue4'
-            f={4}
-            mb={-3}
-            children={'Female'}
-          />
+        <TextStat
+          title={'Female'}
+          stat={femalePercent}
+        />
           
-          <Text
-            color='blue4'
-            f={7}
-            mt={4}
-            center
-            children={femalePercent}
-          />
-
-      </Box>
-
-      <TextStat
-        title={'Female'}
-        stat={femalePercent}
-      />
-        
-    </Flex>
+      </Flex>
 
     </div>
   ) 

@@ -3,6 +3,7 @@ import fetch from 'isomorphic-fetch'
 import HeroImage from '../components/HeroImage'
 import Header from '../components/Header'
 import Breakdown from '../components/Breakdown'
+import Footer from '../components/Footer'
 
 export default class App extends Component {
   constructor() {
@@ -33,6 +34,8 @@ export default class App extends Component {
         <Header />
         <HeroImage loading={loading} data={data} />
         <Breakdown data={data} />
+
+        <Footer />
         </div>
     )
   }
