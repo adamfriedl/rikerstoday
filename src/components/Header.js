@@ -5,9 +5,9 @@ const Header = () =>
 
   <Sticky 
     p={3} 
-    my={2} 
+    // my={2} 
     top left
-    color={'white'}
+    color={'green4'}
     bg={'blue4'}
   >
     <Text

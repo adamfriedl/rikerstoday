@@ -1,0 +1,41 @@
+import React from 'react'
+import { PanelHeader, PanelFooter, Text, Box, Subhead } from 'rebass'
+import { VictoryPie } from 'victory'
+
+const PieChart = ({
+  title = 'Title',
+  chartData = '#'
+}) => {
+
+    const colors = [
+    '#da864a',
+    '#cc5500',
+    '#a04300',
+    '#5e2700'
+  ]
+
+  return(
+    <Box
+      w={[1, 1/2, 1/3]}
+      my={2}
+      pr={4}
+    >
+      <PanelHeader
+        color='blue4'
+        f={4}
+        mb={-3}
+        >
+        {title}
+      </PanelHeader>                        
+        <VictoryPie
+          data={chartData}      
+          innerRadius={60} 
+          labelRadius={85}
+          style={{ labels: { fontFamily: '"Playfair Display", serif', fontSize: 20, fill: "white" }}}
+          colorScale={colors}       
+        />
+    </Box>
+  )
+}
+
+export default PieChart
