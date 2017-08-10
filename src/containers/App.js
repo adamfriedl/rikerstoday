@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import fetch from 'isomorphic-fetch'
+import { Container } from 'rebass'
 import HeroImage from '../components/HeroImage'
+import Introduction from '../components/Introduction'
 import Header from '../components/Header'
 import Breakdown from '../components/Breakdown'
 import Footer from '../components/Footer'
@@ -33,7 +35,10 @@ export default class App extends Component {
       <div>
         <Header />
         <HeroImage loading={loading} data={data} />
-        <Breakdown data={data} />
+        <Container>
+          <Introduction />
+          <Breakdown data={data} />
+        </Container>
 
         <Footer />
         </div>

@@ -1,9 +1,9 @@
 import React from 'react'
-import { Box, PanelHeader, Text } from 'rebass'
+import { Box, PanelHeader, Text, PanelFooter } from 'rebass'
 
 const TextStat = ({
   title = "Title",
-  stat = '#'
+  stat = "#"
   
 }) =>
 
@@ -16,17 +16,19 @@ const TextStat = ({
     <PanelHeader
       color='blue4'
       f={4}
-      mb={-3}
       children={title}
     />
     
-    <Text
-      color='blue4'
-      f={7}
-      mt={4}
-      center
-      children={stat}
-    />
+    <Box
+      py={5}
+    >
+      <Text
+        color='blue4'
+        f={9}
+        center
+        children={stat}
+      />
+    </Box>
 
   </Box>
 
