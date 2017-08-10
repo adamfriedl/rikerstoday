@@ -1,5 +1,5 @@
 import React from 'react'
-import { Sticky, Text, NavLink } from 'rebass'
+import { Sticky, Flex, Box, Text, NavLink } from 'rebass'
 
 const Header = () =>
 
@@ -10,16 +10,18 @@ const Header = () =>
     color={'blue4'}    
     bg={'white'}
   >
+
     <Text
+      style={{display: 'inline'}}
+      mr={4}
       f={[2, 3]}
       children={'Rikers Today'}
     />
-      
-      <NavLink
-        style={{textAlign: 'right'}}
-        href={'#'}
-        children='About'
-      />
+  
+    <NavLink          
+      href={'#'}
+      children='About'
+    />
 
   </Sticky>
 
