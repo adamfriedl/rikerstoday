@@ -15,7 +15,7 @@ export default class App extends Component {
   }
 
   componentDidMount() { 
-    const data = fetch('https://data.cityofnewyork.us/resource/gqrb-77i6.json?$limit=12000')
+    fetch('https://data.cityofnewyork.us/resource/gqrb-77i6.json?$limit=12000')
       .then(res => res.json())
       .then(array => 
         this.setState({
