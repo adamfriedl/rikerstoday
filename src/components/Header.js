@@ -17,11 +17,6 @@ const Header = () =>
       f={[2, 3]}
       children={'Rikers Today'}
     />
-  
-    <NavLink          
-      href={'#'}
-      children='About'
-    />
 
   </Sticky>
 
