@@ -32,7 +32,7 @@ const HeroImage = (props) =>
           <Text
             mt={3}
             f={[3, 4]}
-            children='persons are in NYC DOC custody'
+            children='persons are in NYC DOC custody today'
           />
         </Box>
         
