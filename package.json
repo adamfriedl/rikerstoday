@@ -20,7 +20,8 @@
     "recharts": "^1.0.0-alpha.2",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
-    "rm": "^0.1.8"
+    "rm": "^0.1.8",
+    "victory": "^0.24.3"
   },
   "devDependencies": {
     "react-scripts": "1.0.10"
