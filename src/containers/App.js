@@ -17,7 +17,11 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    fetch('https://data.cityofnewyork.us/resource/gqrb-77i6.json?$limit=11000')
+    fetch(
+      `https://data.cityofnewyork.us/resource/gqrb-77i6.json?$limit=11000&$$app_token=${
+        process.env.REACT_APP_API_KEY
+      }`
+    )
       .then(res => res.json())
       .then(array =>
         this.setState({
