@@ -7,7 +7,7 @@ const HeroImage = props => (
     <Banner
       color="white"
       // bg='green4'
-      backgroundImage="https://i.imgur.com/zY3OaVC.jpg"
+      backgroundImage="https://i.imgur.com/JwMci8U.jpg"
     >
       <Flex wrap>
         <Box w={[1, 1 / 2]}>
