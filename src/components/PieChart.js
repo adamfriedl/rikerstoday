@@ -1,5 +1,5 @@
 import React from 'react';
-import { PanelHeader, PanelFooter, Text, Box, Subhead } from 'rebass';
+import { PanelHeader, Box } from 'rebass';
 import { VictoryPie } from 'victory';
 
 const PieChart = ({ title = 'Title', chartData = '#' }) => {

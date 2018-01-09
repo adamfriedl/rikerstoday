@@ -1,14 +1,5 @@
 import React from 'react';
-import {
-  Flex,
-  PanelHeader,
-  Text,
-  Box,
-  Panel,
-  PanelFooter,
-  Subhead
-} from 'rebass';
-// import { VictoryChart, VictoryContainer, VictoryPie, VictoryTheme, VictoryTransition, VictoryLabel, VictoryTooltip } from 'victory'
+import { Flex } from 'rebass';
 import PieChart from './PieChart';
 import TextStat from './TextStat';
 
