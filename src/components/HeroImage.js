@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Flex, Box, Banner, Text, Heading } from 'rebass';
 import grid from '../assets/icons/grid.svg';
 
