@@ -4,11 +4,7 @@ import grid from '../assets/icons/grid.svg';
 
 const HeroImage = props => (
   <div>
-    <Banner
-      color="white"
-      // bg='green4'
-      backgroundImage="https://i.imgur.com/JwMci8U.jpg"
-    >
+    <Banner color="white" backgroundImage="https://i.imgur.com/JwMci8U.jpg">
       <Flex wrap>
         <Box w={[1, 1 / 2]}>
           <Heading f={9}>
