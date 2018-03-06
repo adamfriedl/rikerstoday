@@ -22,7 +22,7 @@ const Breakdown = props => {
   let custodyChartData = [
     { x: 'Min \n' + Math.round(min / total * 100) + '%', y: min },
     { x: 'Med \n' + Math.round(med / total * 100) + '%', y: med },
-    { x: 'Max \n' + Math.round(max / total * 100) + '%', y: max }
+    { x: 'Max \n' + Math.round(max / total * 100) + '%', y: max },
   ];
 
   // Race calculations
@@ -36,9 +36,9 @@ const Breakdown = props => {
     { x: 'Asian \n' + Math.round(asian / total * 100) + '%', y: asian },
     {
       x: 'Hispanic \n' + Math.round(hispanic / total * 100) + '%',
-      y: hispanic
+      y: hispanic,
     },
-    { x: 'White \n' + Math.round(white / total * 100) + '%', y: white }
+    { x: 'White \n' + Math.round(white / total * 100) + '%', y: white },
   ];
 
   // Age calculations
@@ -49,7 +49,7 @@ const Breakdown = props => {
   let ageChartData = [
     { x: 'Under 22 \n' + Math.round(to21 / total * 100) + '%', y: to21 },
     { x: '22 to 40 \n' + Math.round(to40 / total * 100) + '%', y: to40 },
-    { x: 'Over 40 \n' + Math.round(over40 / total * 100) + '%', y: over40 }
+    { x: 'Over 40 \n' + Math.round(over40 / total * 100) + '%', y: over40 },
   ];
 
   // Gender calculations
@@ -76,7 +76,7 @@ const Breakdown = props => {
 
         <TextStat title={'Female'} stat={femalePercent} />
 
-        <TextStat title={'Mental Health'} stat={mentalHealthPercent} />
+        <TextStat title={'Behavioral Health'} stat={mentalHealthPercent} />
 
         <TextStat title={'Gang Affiliation'} stat={gangAffiliationPercent} />
       </Flex>

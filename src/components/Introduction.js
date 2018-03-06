@@ -15,11 +15,6 @@ const Introduction = () => (
           NYC Open Data
         </a>{' '}
         and updates daily.
-        <br />
-        <br />
-        The meaning of designations used in the dataset is unclear in a few
-        cases. I've made my best educated guesses to interpret them. Explanatory
-        notes are forthcoming.
       </Text>
     </Box>
   </Container>
